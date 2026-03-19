@@ -1,0 +1,63 @@
+name: agenda_flutter
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.7 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.8
+  # google_fonts: ^5.1.0  # Deshabilitado temporalmente - causaba error de AssetManifest
+  font_awesome_flutter: ^10.4.0
+
+  # State Management & Navigation
+  provider: ^6.0.0
+
+  # Background Tasks & Notifications (VERSIONES ESTABLES)
+  flutter_local_notifications: ^18.0.0  # Versión sin ambigüedad en bigLargeIcon
+  timezone: ^0.9.1
+
+  # Device Interaction (VERSIONES COMPATIBLES)
+  vibration: ^2.1.0
+  audioplayers: ^5.0.0
+
+  # Location & Maps (OpenStreetMap - Sin API Key requerida)
+  geolocator: ^10.1.0
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
+  geocoding: ^2.1.0
+  permission_handler: ^11.1.0
+
+  # Storage & Database
+  sqflite: ^2.2.8
+  path_provider: ^2.1.0
+  path: ^1.8.3
+  shared_preferences: ^2.2.0
+
+  # Utilities
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets (imágenes, sonidos, datos)
+  assets:
+    - assets/
+    - assets/sounds/
+  
+  # Si tienes fonts, descomenta y agrega:
+  # fonts:
+  #   - family: YourFontFamily
+  #     fonts:
+  #       - asset: fonts/YourFont-Regular.ttf
